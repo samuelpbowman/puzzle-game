@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-Fi-I8b">
+                                <rect key="frame" x="16.5" y="161.5" width="342" height="342"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IYB-Fi-I8b" secondAttribute="height" multiplier="1:1" id="eYi-kZ-5Y1"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uYj-KL-M5V" appends="YES" id="2zo-Ql-Up7"/>
+                                    <outletCollection property="gestureRecognizers" destination="QRu-mJ-K6s" appends="YES" id="LO7-Gp-zF0"/>
+                                    <outletCollection property="gestureRecognizers" destination="M9O-4f-qNn" appends="YES" id="z6u-VP-MPP"/>
+                                    <outletCollection property="gestureRecognizers" destination="3IN-fq-clk" appends="YES" id="DqZ-zu-hu2"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDt-5e-8Og">
+                                <rect key="frame" x="317.5" y="91" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-m9-UXY">
+                                <rect key="frame" x="254.5" y="91" width="55" height="20.5"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="moG-Hg-cUZ" appends="YES" id="JPS-GK-l0q"/>
+                                </connections>
+                            </label>
+                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="3" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Au-Sp6">
+                                <rect key="frame" x="215" y="123.5" width="94" height="29"/>
+                                <connections>
+                                    <action selector="setDisplayedDifficulty:" destination="BYZ-38-t0r" eventType="valueChanged" id="alV-Q0-diV"/>
+                                </connections>
+                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAk-lT-wd5">
+                                <rect key="frame" x="16" y="86" width="81" height="30"/>
+                                <state key="normal" title="New Puzzle"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpg-OQ-as7"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5g-Op-PoH">
+                                <rect key="frame" x="317" y="128" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1e-Mj-0er">
+                                <rect key="frame" x="16" y="128" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IGz-yT-ix3">
+                                <rect key="frame" x="110" y="28" width="155" height="29"/>
+                                <segments>
+                                    <segment title="Cat Mode"/>
+                                    <segment title="Dog Mode"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jDt-5e-8Og" firstAttribute="leading" secondItem="xFN-m9-UXY" secondAttribute="trailing" constant="8" id="0me-A1-n2a"/>
+                            <constraint firstItem="IYB-Fi-I8b" firstAttribute="top" secondItem="jAk-lT-wd5" secondAttribute="bottom" constant="45.5" id="1H1-Um-4VY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jDt-5e-8Og" secondAttribute="trailing" constant="31" id="1WG-H2-t8A"/>
+                            <constraint firstItem="IYB-Fi-I8b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="0.5" id="31j-OV-8jG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H5g-Op-PoH" secondAttribute="trailing" constant="31" id="3Vj-Ut-tbt"/>
+                            <constraint firstItem="H5g-Op-PoH" firstAttribute="leading" secondItem="vf9-Au-Sp6" secondAttribute="trailing" constant="8" id="5fd-md-hI6"/>
+                            <constraint firstItem="IYB-Fi-I8b" firstAttribute="top" secondItem="H5g-Op-PoH" secondAttribute="bottom" constant="12.5" id="6Hw-FX-oDR"/>
+                            <constraint firstItem="jAk-lT-wd5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="Adf-4P-rme"/>
+                            <constraint firstItem="jDt-5e-8Og" firstAttribute="leading" secondItem="xFN-m9-UXY" secondAttribute="trailing" constant="8" id="DSo-Lk-bdn"/>
+                            <constraint firstItem="H5g-Op-PoH" firstAttribute="top" secondItem="jDt-5e-8Og" secondAttribute="bottom" constant="16" id="NS8-TD-n8N"/>
+                            <constraint firstItem="xFN-m9-UXY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="UaR-4M-TCu"/>
+                            <constraint firstItem="IGz-yT-ix3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VAP-eb-6Bz"/>
+                            <constraint firstItem="jAk-lT-wd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="agB-5N-Ujs"/>
+                            <constraint firstItem="IGz-yT-ix3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jK7-z4-4zG"/>
+                            <constraint firstItem="vf9-Au-Sp6" firstAttribute="top" secondItem="xFN-m9-UXY" secondAttribute="bottom" constant="12" id="oRz-dt-M7q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IYB-Fi-I8b" secondAttribute="trailing" constant="0.5" id="saM-sz-FT3"/>
+                            <constraint firstItem="IYB-Fi-I8b" firstAttribute="top" secondItem="vf9-Au-Sp6" secondAttribute="bottom" constant="9" id="zCO-fO-ba9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="difficultyLabel" destination="a1e-Mj-0er" id="7ZD-Tz-3ZY"/>
+                        <outlet property="difficultyNotifier" destination="H5g-Op-PoH" id="I4H-cH-r3c"/>
+                        <outlet property="difficultySelector" destination="vf9-Au-Sp6" id="jeu-IC-751"/>
+                        <outlet property="difficultySetterVisibilityToggler" destination="moG-Hg-cUZ" id="kof-gJ-dfm"/>
+                        <outlet property="downSwipeRecognizer" destination="M9O-4f-qNn" id="Go0-G7-cuf"/>
+                        <outlet property="gameBoard" destination="IYB-Fi-I8b" id="owT-98-S7R"/>
+                        <outlet property="leftSwipeRecognizer" destination="QRu-mJ-K6s" id="7l1-wU-5gy"/>
+                        <outlet property="modeSelector" destination="IGz-yT-ix3" id="mSY-8y-C3e"/>
+                        <outlet property="movesCounter" destination="jDt-5e-8Og" id="q4a-6j-ecG"/>
+                        <outlet property="rightSwipeRecognizer" destination="uYj-KL-M5V" id="vAm-Gs-e0V"/>
+                        <outlet property="startButton" destination="jAk-lT-wd5" id="zaE-OU-R9t"/>
+                        <outlet property="upSwipeRecognizer" destination="3IN-fq-clk" id="pcd-iV-9xi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="uYj-KL-M5V">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="0XU-Gj-DgF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="QRu-mJ-K6s">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="N4x-hh-RuF"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="M9O-4f-qNn">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="Y22-jK-9Gh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="3IN-fq-clk">
+                    <connections>
+                        <action selector="move:" destination="BYZ-38-t0r" id="87D-4Q-0Mc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="moG-Hg-cUZ">
+                    <connections>
+                        <action selector="setDifficultySetterVisibility:" destination="BYZ-38-t0r" id="Stw-4E-OQ8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
