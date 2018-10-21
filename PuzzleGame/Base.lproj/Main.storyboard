@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,14 +18,28 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-Fi-I8b">
-                                <rect key="frame" x="16.5" y="161.5" width="342" height="342"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20.666666666666657" y="161.66666666666663" width="373" height="373"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-M7-OKf">
+                                        <rect key="frame" x="0.0" y="132.00000000000003" width="373" height="109"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="109" id="qf8-Eo-GRm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="qAa-M7-OKf" firstAttribute="leading" secondItem="IYB-Fi-I8b" secondAttribute="leading" id="93E-qe-BS0"/>
+                                    <constraint firstItem="qAa-M7-OKf" firstAttribute="centerY" secondItem="IYB-Fi-I8b" secondAttribute="centerY" id="Gbu-Rk-zFx"/>
+                                    <constraint firstAttribute="trailing" secondItem="qAa-M7-OKf" secondAttribute="trailing" id="IUJ-kI-kZ7"/>
                                     <constraint firstAttribute="width" secondItem="IYB-Fi-I8b" secondAttribute="height" multiplier="1:1" id="eYi-kZ-5Y1"/>
                                 </constraints>
                                 <connections>
@@ -38,13 +50,13 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDt-5e-8Og">
-                                <rect key="frame" x="317.5" y="91" width="10.5" height="21"/>
+                                <rect key="frame" x="353" y="91" width="10" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-m9-UXY">
-                                <rect key="frame" x="254.5" y="91" width="55" height="20.5"/>
+                                <rect key="frame" x="290" y="91" width="55" height="21"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -53,39 +65,43 @@
                                     <outletCollection property="gestureRecognizers" destination="moG-Hg-cUZ" appends="YES" id="JPS-GK-l0q"/>
                                 </connections>
                             </label>
-                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="3" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Au-Sp6">
-                                <rect key="frame" x="215" y="123.5" width="94" height="29"/>
-                                <connections>
-                                    <action selector="setDisplayedDifficulty:" destination="BYZ-38-t0r" eventType="valueChanged" id="alV-Q0-diV"/>
-                                </connections>
-                            </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAk-lT-wd5">
-                                <rect key="frame" x="16" y="86" width="81" height="30"/>
+                                <rect key="frame" x="20" y="86" width="81" height="30"/>
                                 <state key="normal" title="New Puzzle"/>
                                 <connections>
                                     <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpg-OQ-as7"/>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5g-Op-PoH">
-                                <rect key="frame" x="317" y="128" width="11" height="21"/>
+                                <rect key="frame" x="352" y="128" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1e-Mj-0er">
-                                <rect key="frame" x="16" y="128" width="73" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1e-Mj-0er">
+                                <rect key="frame" x="20" y="127.00000000000001" width="73" height="20.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IGz-yT-ix3">
-                                <rect key="frame" x="110" y="28" width="155" height="29"/>
-                                <segments>
-                                    <segment title="Cat Mode"/>
-                                    <segment title="Dog Mode"/>
-                                </segments>
-                            </segmentedControl>
+                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="3" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Au-Sp6">
+                                <rect key="frame" x="250" y="124" width="94" height="29"/>
+                                <connections>
+                                    <action selector="setDisplayedDifficulty:" destination="BYZ-38-t0r" eventType="valueChanged" id="alV-Q0-diV"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzle Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGr-wl-abF">
+                                <rect key="frame" x="139" y="28" width="136" height="29"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="SdG-ii-4Iu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -98,13 +114,20 @@
                             <constraint firstItem="IYB-Fi-I8b" firstAttribute="top" secondItem="H5g-Op-PoH" secondAttribute="bottom" constant="12.5" id="6Hw-FX-oDR"/>
                             <constraint firstItem="jAk-lT-wd5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="Adf-4P-rme"/>
                             <constraint firstItem="jDt-5e-8Og" firstAttribute="leading" secondItem="xFN-m9-UXY" secondAttribute="trailing" constant="8" id="DSo-Lk-bdn"/>
+                            <constraint firstItem="a1e-Mj-0er" firstAttribute="leading" secondItem="jAk-lT-wd5" secondAttribute="leading" id="MRi-zP-Lyb"/>
                             <constraint firstItem="H5g-Op-PoH" firstAttribute="top" secondItem="jDt-5e-8Og" secondAttribute="bottom" constant="16" id="NS8-TD-n8N"/>
+                            <constraint firstItem="a1e-Mj-0er" firstAttribute="top" secondItem="jAk-lT-wd5" secondAttribute="bottom" constant="11" id="R8j-1g-fDw"/>
                             <constraint firstItem="xFN-m9-UXY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="UaR-4M-TCu"/>
-                            <constraint firstItem="IGz-yT-ix3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VAP-eb-6Bz"/>
                             <constraint firstItem="jAk-lT-wd5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="agB-5N-Ujs"/>
-                            <constraint firstItem="IGz-yT-ix3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="jK7-z4-4zG"/>
+                            <constraint firstItem="IYB-Fi-I8b" firstAttribute="top" secondItem="a1e-Mj-0er" secondAttribute="bottom" constant="14" id="inN-EV-hOj"/>
+                            <constraint firstItem="tGr-wl-abF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jTA-8f-UE2"/>
+                            <constraint firstItem="a1e-Mj-0er" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="127" id="kOR-Os-GoB"/>
+                            <constraint firstItem="vf9-Au-Sp6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a1e-Mj-0er" secondAttribute="trailing" constant="8" symbolic="YES" id="kky-PW-fO6"/>
+                            <constraint firstItem="tGr-wl-abF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="lbU-7r-wX9"/>
                             <constraint firstItem="vf9-Au-Sp6" firstAttribute="top" secondItem="xFN-m9-UXY" secondAttribute="bottom" constant="12" id="oRz-dt-M7q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IYB-Fi-I8b" secondAttribute="trailing" constant="0.5" id="saM-sz-FT3"/>
+                            <constraint firstItem="vf9-Au-Sp6" firstAttribute="top" secondItem="tGr-wl-abF" secondAttribute="bottom" constant="67" id="wGM-ck-f8N"/>
+                            <constraint firstItem="xFN-m9-UXY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jAk-lT-wd5" secondAttribute="trailing" constant="8" symbolic="YES" id="x0S-rX-N7V"/>
                             <constraint firstItem="IYB-Fi-I8b" firstAttribute="top" secondItem="vf9-Au-Sp6" secondAttribute="bottom" constant="9" id="zCO-fO-ba9"/>
                         </constraints>
                     </view>
@@ -116,7 +139,6 @@
                         <outlet property="downSwipeRecognizer" destination="M9O-4f-qNn" id="Go0-G7-cuf"/>
                         <outlet property="gameBoard" destination="IYB-Fi-I8b" id="owT-98-S7R"/>
                         <outlet property="leftSwipeRecognizer" destination="QRu-mJ-K6s" id="7l1-wU-5gy"/>
-                        <outlet property="modeSelector" destination="IGz-yT-ix3" id="mSY-8y-C3e"/>
                         <outlet property="movesCounter" destination="jDt-5e-8Og" id="q4a-6j-ecG"/>
                         <outlet property="rightSwipeRecognizer" destination="uYj-KL-M5V" id="vAm-Gs-e0V"/>
                         <outlet property="startButton" destination="jAk-lT-wd5" id="zaE-OU-R9t"/>
@@ -150,7 +172,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+            <point key="canvasLocation" x="135.19999999999999" y="135.38230884557723"/>
         </scene>
     </scenes>
 </document>

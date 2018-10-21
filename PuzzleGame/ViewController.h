@@ -1,25 +1,26 @@
 //
 //  ViewController.h
-//  PuzzlePets
+//  PuzzleGame
 //
 //  Created by Samuel Bowman on 6/24/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@class SBPuzzlePetsEngine;
+@class SBPuzzleGameEngine;
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *modeSelector;
+//@property (weak, nonatomic) IBOutlet UISegmentedControl *modeSelector;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *movesCounter;
 @property (weak, nonatomic) IBOutlet UILabel *difficultyLabel;
 @property (weak, nonatomic) IBOutlet UIStepper *difficultySelector;
 @property (weak, nonatomic) IBOutlet UILabel *difficultyNotifier;
 @property (weak, nonatomic) IBOutlet UIView *gameBoard;
+//@property (weak, nonatomic) IBOutlet UILabel *winLabel;
 
-@property (strong, atomic) SBPuzzlePetsEngine *engine;
+@property (strong, atomic) SBPuzzleGameEngine *engine;
 
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *difficultySetterVisibilityToggler;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *rightSwipeRecognizer;

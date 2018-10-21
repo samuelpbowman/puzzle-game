@@ -1,6 +1,6 @@
 //
-//  SBPuzzlePetsEngine.h
-//  PuzzlePets
+//  SBPuzzleGameEngine.h
+//  PuzzleGame
 //
 //  Created by Samuel Bowman on 6/24/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface SBPuzzlePetsEngine : NSObject
+@interface SBPuzzleGameEngine : NSObject
 
 @property int moves;
 @property int dimension;
@@ -17,7 +17,7 @@
 @property double pieceSize;
 @property (strong, nonatomic) NSMutableArray *puzzle;
 
-- (SBPuzzlePetsEngine *)initEngine:(UIImage *)image withDimension:(int)dimension withSize:(double)size;
+- (SBPuzzleGameEngine *)initEngine:(UIImage *)image withDimension:(int)dimension withSize:(double)size;
 - (void)moveUp;
 - (void)moveDown;
 - (void)moveLeft;

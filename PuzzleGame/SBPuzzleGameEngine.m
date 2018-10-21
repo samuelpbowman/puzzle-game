@@ -1,17 +1,17 @@
 //
-//  SBPuzzlePetsEngine.m
-//  PuzzlePets
+//  SBPuzzleGameEngine.m
+//  PuzzleGame
 //
 //  Created by Samuel Bowman on 6/24/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.
 //
 
-#import "SBPuzzlePetsEngine.h"
+#import "SBPuzzleGameEngine.h"
 #import "SBTransformBoard.h"
 #import "SBPuzzleinator.h"
 #import "SBPuzzlePiece.h"
 
-@interface SBPuzzlePetsEngine () {
+@interface SBPuzzleGameEngine () {
     double _boardSize;
     SBPuzzlePiece *_emptyPiece;
     SBTransformBoard *_transform;
@@ -22,9 +22,9 @@
 
 @end
 
-@implementation SBPuzzlePetsEngine
+@implementation SBPuzzleGameEngine
 
-- (SBPuzzlePetsEngine *)initEngine:(UIImage *)image withDimension:(int)dimension withSize:(double)size
+- (SBPuzzleGameEngine *)initEngine:(UIImage *)image withDimension:(int)dimension withSize:(double)size
 {
     _boardSize = size;
     self.dimension = dimension;

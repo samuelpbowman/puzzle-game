@@ -1,6 +1,6 @@
 //
-//  PuzzlePetsTests.m
-//  PuzzlePetsTests
+//  PuzzleGameTests.m
+//  PuzzleGameTests
 //
 //  Created by Samuel Bowman on 6/24/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface PuzzlePetsTests : XCTestCase
+@interface PuzzleGameTests : XCTestCase
 
 @end
 
-@implementation PuzzlePetsTests
+@implementation PuzzleGameTests
 
 - (void)setUp {
     [super setUp];

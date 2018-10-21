@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  PuzzlePets
+//  PuzzleGame
 //
 //  Created by Samuel Bowman on 6/24/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.

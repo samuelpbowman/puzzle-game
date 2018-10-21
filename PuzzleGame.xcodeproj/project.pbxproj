@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E211ED11F03395C005CFDFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E211ED01F03395C005CFDFB /* CoreGraphics.framework */; };
 		7E32FA471F009D1200E7F6CE /* notepad_icon_rounded.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32FA461F009D1200E7F6CE /* notepad_icon_rounded.png */; };
 		7EA2F79D1F0704B800E5F82A /* SBTransformBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA2F79C1F0704B800E5F82A /* SBTransformBoard.m */; };
 		7EE83CFF1EFF341000A7F126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE83CFE1EFF341000A7F126 /* main.m */; };
@@ -19,8 +18,9 @@
 		7EE83D181EFF341000A7F126 /* PuzzlePetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE83D171EFF341000A7F126 /* PuzzlePetsTests.m */; };
 		7EE83D261EFF467F00A7F126 /* SBPuzzleinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE83D231EFF467F00A7F126 /* SBPuzzleinator.m */; };
 		7EE83D271EFF467F00A7F126 /* SBPuzzlePiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE83D251EFF467F00A7F126 /* SBPuzzlePiece.m */; };
-		7EE83D2A1EFF47C000A7F126 /* SBPuzzlePetsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE83D291EFF47C000A7F126 /* SBPuzzlePetsEngine.m */; };
+		7EE83D2A1EFF47C000A7F126 /* SBPuzzleGameEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE83D291EFF47C000A7F126 /* SBPuzzleGameEngine.m */; };
 		7EE83D301EFF567A00A7F126 /* notepad_icon_edited.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE83D2F1EFF567A00A7F126 /* notepad_icon_edited.png */; };
+		7EE909F8217CFC8E0092B88D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EE909F7217CFC8E0092B88D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		7E32FA461F009D1200E7F6CE /* notepad_icon_rounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad_icon_rounded.png; sourceTree = "<group>"; };
 		7EA2F79B1F0704B800E5F82A /* SBTransformBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTransformBoard.h; sourceTree = "<group>"; };
 		7EA2F79C1F0704B800E5F82A /* SBTransformBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTransformBoard.m; sourceTree = "<group>"; };
-		7EE83CFA1EFF341000A7F126 /* PuzzlePets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzlePets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE83CFA1EFF341000A7F126 /* PuzzleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE83CFE1EFF341000A7F126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EE83D001EFF341000A7F126 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EE83D011EFF341000A7F126 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,16 +49,17 @@
 		7EE83D091EFF341000A7F126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EE83D0C1EFF341000A7F126 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EE83D0E1EFF341000A7F126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EE83D131EFF341000A7F126 /* PuzzlePetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzlePetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE83D131EFF341000A7F126 /* PuzzleGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE83D171EFF341000A7F126 /* PuzzlePetsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzlePetsTests.m; sourceTree = "<group>"; };
 		7EE83D191EFF341000A7F126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EE83D221EFF467F00A7F126 /* SBPuzzleinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPuzzleinator.h; sourceTree = "<group>"; };
 		7EE83D231EFF467F00A7F126 /* SBPuzzleinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPuzzleinator.m; sourceTree = "<group>"; };
 		7EE83D241EFF467F00A7F126 /* SBPuzzlePiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPuzzlePiece.h; sourceTree = "<group>"; };
 		7EE83D251EFF467F00A7F126 /* SBPuzzlePiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPuzzlePiece.m; sourceTree = "<group>"; };
-		7EE83D281EFF47C000A7F126 /* SBPuzzlePetsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPuzzlePetsEngine.h; sourceTree = "<group>"; };
-		7EE83D291EFF47C000A7F126 /* SBPuzzlePetsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPuzzlePetsEngine.m; sourceTree = "<group>"; };
+		7EE83D281EFF47C000A7F126 /* SBPuzzleGameEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPuzzleGameEngine.h; sourceTree = "<group>"; };
+		7EE83D291EFF47C000A7F126 /* SBPuzzleGameEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPuzzleGameEngine.m; sourceTree = "<group>"; };
 		7EE83D2F1EFF567A00A7F126 /* notepad_icon_edited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad_icon_edited.png; sourceTree = "<group>"; };
+		7EE909F7217CFC8E0092B88D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E211ED11F03395C005CFDFB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +92,9 @@
 		7EE83CF11EFF341000A7F126 = {
 			isa = PBXGroup;
 			children = (
-				7EE83CFC1EFF341000A7F126 /* PuzzlePets */,
-				7EE83D161EFF341000A7F126 /* PuzzlePetsTests */,
+				7EE909F7217CFC8E0092B88D /* Default-568h@2x.png */,
+				7EE83CFC1EFF341000A7F126 /* PuzzleGame */,
+				7EE83D161EFF341000A7F126 /* PuzzleGameTests */,
 				7EE83CFB1EFF341000A7F126 /* Products */,
 				7E211ECF1F03395C005CFDFB /* Frameworks */,
 			);
@@ -102,21 +103,21 @@
 		7EE83CFB1EFF341000A7F126 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7EE83CFA1EFF341000A7F126 /* PuzzlePets.app */,
-				7EE83D131EFF341000A7F126 /* PuzzlePetsTests.xctest */,
+				7EE83CFA1EFF341000A7F126 /* PuzzleGame.app */,
+				7EE83D131EFF341000A7F126 /* PuzzleGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7EE83CFC1EFF341000A7F126 /* PuzzlePets */ = {
+		7EE83CFC1EFF341000A7F126 /* PuzzleGame */ = {
 			isa = PBXGroup;
 			children = (
 				7EE83D001EFF341000A7F126 /* AppDelegate.h */,
 				7EE83D011EFF341000A7F126 /* AppDelegate.m */,
 				7EE83D031EFF341000A7F126 /* ViewController.h */,
 				7EE83D041EFF341000A7F126 /* ViewController.m */,
-				7EE83D281EFF47C000A7F126 /* SBPuzzlePetsEngine.h */,
-				7EE83D291EFF47C000A7F126 /* SBPuzzlePetsEngine.m */,
+				7EE83D281EFF47C000A7F126 /* SBPuzzleGameEngine.h */,
+				7EE83D291EFF47C000A7F126 /* SBPuzzleGameEngine.m */,
 				7EA2F79B1F0704B800E5F82A /* SBTransformBoard.h */,
 				7EA2F79C1F0704B800E5F82A /* SBTransformBoard.m */,
 				7EE83D221EFF467F00A7F126 /* SBPuzzleinator.h */,
@@ -131,7 +132,7 @@
 				7EE83D0E1EFF341000A7F126 /* Info.plist */,
 				7EE83CFD1EFF341000A7F126 /* Supporting Files */,
 			);
-			path = PuzzlePets;
+			path = PuzzleGame;
 			sourceTree = "<group>";
 		};
 		7EE83CFD1EFF341000A7F126 /* Supporting Files */ = {
@@ -142,21 +143,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7EE83D161EFF341000A7F126 /* PuzzlePetsTests */ = {
+		7EE83D161EFF341000A7F126 /* PuzzleGameTests */ = {
 			isa = PBXGroup;
 			children = (
 				7EE83D171EFF341000A7F126 /* PuzzlePetsTests.m */,
 				7EE83D191EFF341000A7F126 /* Info.plist */,
 			);
-			path = PuzzlePetsTests;
+			path = PuzzleGameTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7EE83CF91EFF341000A7F126 /* PuzzlePets */ = {
+		7EE83CF91EFF341000A7F126 /* PuzzleGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EE83D1C1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzlePets" */;
+			buildConfigurationList = 7EE83D1C1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzleGame" */;
 			buildPhases = (
 				7EE83CF61EFF341000A7F126 /* Sources */,
 				7EE83CF71EFF341000A7F126 /* Frameworks */,
@@ -166,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = PuzzlePets;
+			name = PuzzleGame;
 			productName = PuzzlePets;
-			productReference = 7EE83CFA1EFF341000A7F126 /* PuzzlePets.app */;
+			productReference = 7EE83CFA1EFF341000A7F126 /* PuzzleGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7EE83D121EFF341000A7F126 /* PuzzlePetsTests */ = {
+		7EE83D121EFF341000A7F126 /* PuzzleGameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7EE83D1F1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzlePetsTests" */;
+			buildConfigurationList = 7EE83D1F1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzleGameTests" */;
 			buildPhases = (
 				7EE83D0F1EFF341000A7F126 /* Sources */,
 				7EE83D101EFF341000A7F126 /* Frameworks */,
@@ -184,9 +185,9 @@
 			dependencies = (
 				7EE83D151EFF341000A7F126 /* PBXTargetDependency */,
 			);
-			name = PuzzlePetsTests;
+			name = PuzzleGameTests;
 			productName = PuzzlePetsTests;
-			productReference = 7EE83D131EFF341000A7F126 /* PuzzlePetsTests.xctest */;
+			productReference = 7EE83D131EFF341000A7F126 /* PuzzleGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +196,7 @@
 		7EE83CF21EFF341000A7F126 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Samuel Bowman";
 				TargetAttributes = {
 					7EE83CF91EFF341000A7F126 = {
@@ -211,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7EE83CF51EFF341000A7F126 /* Build configuration list for PBXProject "PuzzlePets" */;
+			buildConfigurationList = 7EE83CF51EFF341000A7F126 /* Build configuration list for PBXProject "PuzzleGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7EE83CF91EFF341000A7F126 /* PuzzlePets */,
-				7EE83D121EFF341000A7F126 /* PuzzlePetsTests */,
+				7EE83CF91EFF341000A7F126 /* PuzzleGame */,
+				7EE83D121EFF341000A7F126 /* PuzzleGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +241,7 @@
 				7E32FA471F009D1200E7F6CE /* notepad_icon_rounded.png in Resources */,
 				7EE83D301EFF567A00A7F126 /* notepad_icon_edited.png in Resources */,
 				7EE83D081EFF341000A7F126 /* Main.storyboard in Resources */,
+				7EE909F8217CFC8E0092B88D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EE83D2A1EFF47C000A7F126 /* SBPuzzlePetsEngine.m in Sources */,
+				7EE83D2A1EFF47C000A7F126 /* SBPuzzleGameEngine.m in Sources */,
 				7EE83D051EFF341000A7F126 /* ViewController.m in Sources */,
 				7EE83D021EFF341000A7F126 /* AppDelegate.m in Sources */,
 				7EE83CFF1EFF341000A7F126 /* main.m in Sources */,
@@ -280,7 +282,7 @@
 /* Begin PBXTargetDependency section */
 		7EE83D151EFF341000A7F126 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7EE83CF91EFF341000A7F126 /* PuzzlePets */;
+			target = 7EE83CF91EFF341000A7F126 /* PuzzleGame */;
 			targetProxy = 7EE83D141EFF341000A7F126 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -319,6 +321,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -326,6 +329,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -333,6 +337,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -373,6 +378,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -380,6 +386,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -387,6 +394,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -403,7 +411,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -412,10 +420,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JAEK25CLT3;
-				INFOPLIST_FILE = PuzzlePets/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PuzzleGame/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuel.PuzzlePets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -424,10 +433,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JAEK25CLT3;
-				INFOPLIST_FILE = PuzzlePets/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PuzzleGame/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuel.PuzzlePets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -440,7 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuel.PuzzlePetsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlePets.app/PuzzlePets";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzleGame.app/PuzzleGame";
 			};
 			name = Debug;
 		};
@@ -453,14 +463,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuel.PuzzlePetsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzlePets.app/PuzzlePets";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzzleGame.app/PuzzleGame";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7EE83CF51EFF341000A7F126 /* Build configuration list for PBXProject "PuzzlePets" */ = {
+		7EE83CF51EFF341000A7F126 /* Build configuration list for PBXProject "PuzzleGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EE83D1A1EFF341000A7F126 /* Debug */,
@@ -469,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EE83D1C1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzlePets" */ = {
+		7EE83D1C1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzleGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EE83D1D1EFF341000A7F126 /* Debug */,
@@ -478,7 +488,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7EE83D1F1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzlePetsTests" */ = {
+		7EE83D1F1EFF341000A7F126 /* Build configuration list for PBXNativeTarget "PuzzleGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7EE83D201EFF341000A7F126 /* Debug */,

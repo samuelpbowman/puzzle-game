@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  PuzzlePets
+//  PuzzleGame
 //
 //  Created by Samuel Bowman on 6/24/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "SBPuzzlePetsEngine.h"
+#import "SBPuzzleGameEngine.h"
 #import "SBPuzzlePiece.h"
 #import "SBPuzzleinator.h"
 
@@ -35,6 +35,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    //[self.winLabel setHidden:YES];
     [super viewDidAppear:animated];
     [self becomeFirstResponder];
 }
@@ -53,8 +54,15 @@
 }
 
 - (IBAction)startGame:(id)sender {
+    /*if(![self.winLabel isHidden]) {
+        [self.winLabel setHidden:YES];
+    }*/
+    if([[self.gameBoard backgroundColor] isEqual:[UIColor greenColor]]) {
+        [self.gameBoard setBackgroundColor:[UIColor lightGrayColor]];
+    }
     UIImage *sample = [UIImage imageNamed:@"notepad_icon_edited.png"];
-    self.engine = [[SBPuzzlePetsEngine alloc] initEngine:sample withDimension:(int)[self.difficultySelector value] withSize:self.gameBoard.bounds.size.height]; //height == width always due to aspect ratio
+    self.engine = [[SBPuzzleGameEngine alloc] initEngine:sample withDimension:(int)[self.difficultySelector value] withSize:self.gameBoard.bounds.size.height];
+    //height and width are always the same due to the board being square
     [self populateBoard];
     [self.movesCounter setText:@"0"];
 }
@@ -88,9 +96,7 @@
     [self.movesCounter setText:[NSString stringWithFormat:@"%d",self.engine.moves]];
     if([self.engine isVictorious]) {
         [self.gameBoard.subviews makeObjectsPerformSelector: @selector(removeFromSuperview)];
-        UILabel *label = [[UILabel alloc] init];
-        [label setText:@"You win!"];
-        [self.gameBoard addSubview:label];
+        [self.gameBoard setBackgroundColor:[UIColor greenColor]];
     }
 }
 

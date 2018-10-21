@@ -1,13 +1,13 @@
 //
 //  SBTransformBoard.m
-//  PuzzlePets
+//  PuzzleGame
 //
 //  Created by Samuel Bowman on 6/30/17.
 //  Copyright © 2017 Samuel Bowman. All rights reserved.
 //
 
 #import "SBTransformBoard.h"
-#import "SBPuzzlePetsEngine.h"
+#import "SBPuzzleGameEngine.h"
 #import "SBPuzzlePiece.h"
 
 @interface SBTransformBoard () {
@@ -26,7 +26,7 @@
 
 @implementation SBTransformBoard
 
-- (SBTransformBoard *)initWithEngine:(SBPuzzlePetsEngine *)engine withXDir:(int)xDir withYDir:(int)yDir
+- (SBTransformBoard *)initWithEngine:(SBPuzzleGameEngine *)engine withXDir:(int)xDir withYDir:(int)yDir
 {
     _undoCount = 0;
     _xDir = xDir;
